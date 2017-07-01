@@ -189,8 +189,7 @@ def get_genome_app_data():
 
     header = [
         "# RESULT.description=The result that was found based on the features searched in the VCF file.",
-        "# REFERENCE.description=The sources that the analysis and results are based on.",
-        "# biology.description=The biological process responsible for eye color."
+        "# REFERENCE.description=The sources that the analysis and results are based on."
     ]
 
     data['reference'] = [
@@ -199,9 +198,6 @@ def get_genome_app_data():
         "forensic and anthropological usage. "
         "Forensic Sci Int Genet. 2014;9:150-61."
     ]
-
-    data[
-        'biology'] = "Eye color is dependent on the concentration of melanin in the iris pigment epithelium."
 
     return header, data
 
@@ -270,13 +266,12 @@ def detect_eye_color():
 
     headers, data = get_genome_app_data()
 
-    output_ga_df = DataFrame(columns=['RESULT', 'REFERENCE', 'biology'])
+    output_ga_df = DataFrame(columns=['RESULT', 'REFERENCE'])
     output_ga_df['RESULT'] = [
         "Based on the model, a person with these genomic features would have a "
         + result
     ]
     output_ga_df['REFERENCE'] = data['reference']
-    output_ga_df['biology'] = data['biology']
     write_ga(headers, output_ga_df,
              join(OUTPUT_DIRECTORY_PATH, GENOME_APP_NAME + '.output.ga'))
 
