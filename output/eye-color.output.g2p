@@ -1,0 +1,4 @@
+# RESULT.description=The result that was found based on the features searched in the VCF file.
+# REFERENCE.description=The sources that the analysis and results are based on.
+FEATURE	FEATURE TYPE	REGION	STATE	RESULT	REFERENCE
+				98.53% probability of brown colored eyes.	Walsh S, Chaitanya L, Clarisse L, et al. Developmental validation of the HIrisPlex system: DNA-based eye and hair colour prediction for forensic and anthropological usage. Forensic Sci Int Genet. 2014;9:150-61.

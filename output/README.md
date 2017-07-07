@@ -1,13 +1,13 @@
 # Output
 
 This folder contains the output for the Genome App. Every Genome App is responsible for making
-`<genome-app-name>.output.ga`, which is a file describing the
+`<genome-app-name>.output.g2p`, which is a file describing the
 results of the Genome App. To learn more about our GA file format, please refer to this
-[document](https://github.com/Guardiome/create-genome-app/tree/master/simple-genome-app#ga-file-format).<br>
+[document](https://github.com/Guardiome/create-genome-app/tree/master/simple-genome-app#g2p-file-format).<br>
 
-<genome-app-name>.output.ga has 1 required column 'Result' and optional additional result columns.<br>
+<genome-app-name>.output.g2p has 1 required column 'Result' and optional additional result columns.<br>
 
-The following is an example output.ga:
+The following is an example output.g2p:
 TODO: Add example table</genome-app-name>
 
 FEATURE  | FEATURE TYPE | REGION                | STATE              | RESULT                                     | REFERENCE                                           | Action                                                      | Resources                                                                                                                          

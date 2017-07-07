@@ -1,8 +1,9 @@
-from pandas import read_csv, DataFrame
-from numpy import array, dot
 from math import exp
-
 from os.path import basename, dirname, join, realpath
+
+from numpy import array, dot
+from pandas import DataFrame, read_csv
+
 from tabix import open as tabix_open
 
 # Set paths
@@ -266,17 +267,16 @@ def detect_eye_color():
 
     headers, data = get_genome_app_data()
 
-    output_ga_df = DataFrame(columns=['RESULT', 'REFERENCE'])
-    output_ga_df['RESULT'] = [
-        "Based on the model, a person with these genomic features would have a "
-        + result
-    ]
+    output_ga_df = DataFrame(columns=[
+        'FEATURE', 'FEATURE TYPE', 'REGION', 'STATE', 'RESULT', 'REFERENCE'
+    ])
+    output_ga_df['RESULT'] = [result]
     output_ga_df['REFERENCE'] = data['reference']
     write_ga(headers, output_ga_df,
-             join(OUTPUT_DIRECTORY_PATH, GENOME_APP_NAME + '.output.ga'))
+             join(OUTPUT_DIRECTORY_PATH, GENOME_APP_NAME + '.output.g2p'))
 
     print(
-        'This Genome App was run and the output was saved as a table in /output/{}.output.ga.'.
+        'This Genome App was run and the output was saved as a table in /output/{}.output.g2p.'.
         format(GENOME_APP_NAME))
 
     print(output_ga_df)
