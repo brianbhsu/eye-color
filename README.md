@@ -1,5 +1,14 @@
-## About eye color
-Eye color depends on the concentration of melanin in the iris pigment epithelium, the melanin content within the iris stroma, and the cellular density of the stroma.
+# Eye Color
 
-## About this Genome App
-This Genome App calculates the probability of having a specific eye color using your DNA and a logistic regression model. The model was created by analyzing the DNA of thousands of individuals with different eye color.
+This Genome App calculates the probability of having a specific eye color using your DNA and the HIrisPlex system, a logistic regression model.
+
+## Biology
+
+Eye color is determined by variations in a person’s genes. Most of the genes associated with eye color are involved in the production, transport, or storage of a pigment called melanin. Eye color is directly related to the amount and quality of melanin in the front layers of the iris. People with brown eyes have a large amount of melanin in the iris, while people with blue eyes have much less of this pigment.
+
+## Fun Facts
+
+ * The world's most common eye color is brown.
+ * Brown eyes are actually blue underneath.
+ * Blue-eyed people share a common ancestor with every other blue-eyed person in the world.
+ * Heterochromia is when you are born with two differently colored eyes.
