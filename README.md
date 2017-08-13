@@ -1,5 +1,9 @@
 # Eye Color
 
+The eyes are said to be the windows to the soul, but did you know your genes are a window to your eyes? Eye color refers to the color of the iris, which can be blue, green, hazel, brown, or many shades in between.
+
+## How this genome app works?
+
 This Genome App calculates the probability of having a specific eye color using your DNA and the HIrisPlex system, a logistic regression model.
 
 ## Biology
